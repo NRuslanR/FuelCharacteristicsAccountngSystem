@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{76c16979-1992-47c9-9c3b-e88dd8772f94}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>Domain.exe</DCC_DependencyCheckOutputName>
+    <MainSource>Domain.dpr</MainSource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1049</VersionInfo><VersionInfo Name="CodePage">1251</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">Domain.dpr</Source></Source></Delphi.Personality><ModelSupport>False</ModelSupport></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="Domain.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="C:\Common Delphi Libs\u_59968 Delphi Modules\Arrays\Arrays.pas" />
+    <DCCReference Include="C:\Common Delphi Libs\u_59968 Delphi Modules\AuxiliaryDateFunctions.pas" />
+    <DCCReference Include="C:\Common Delphi Libs\u_59968 Delphi Modules\Math\Approximation\NumericInterpolation.pas" />
+    <DCCReference Include="C:\Common Delphi Libs\u_59968 Delphi Modules\Repositories and Domain\Domain\AbstractDomainService.pas" />
+    <DCCReference Include="C:\Common Delphi Libs\u_59968 Delphi Modules\Repositories and Domain\Domain\DomainService.pas" />
+    <DCCReference Include="C:\Common Delphi Libs\u_59968 Delphi Modules\Repositories and Domain\Domain\IDomainRuleUnit.pas" />
+    <DCCReference Include="Common\Interfaces\EmployeeDomainObjectRule.pas" />
+    <DCCReference Include="Common\StandardEmployeeDomainObjectRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Entities\FuelCharacteristicsCalculationCard.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Entities\Interfaces\unIFuelCharacteristicsCalculationCard.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Entities\Interfaces\unIReservoirKind.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Entities\Interfaces\unIReservoirKindReferenceSuite.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Entities\ReservoirKind.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Entities\ReservoirKindReferenceSuite.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\AbstractFuelCharacteristicsCalculationCardAccessingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\Interfaces\FuelCharacteristicsCalculationCardContextInfoEditingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\Interfaces\FuelCharacteristicsCalculationCardContextInfoViewingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\Interfaces\FuelCharacteristicsCalculationCardFuelInfoEditingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\Interfaces\FuelCharacteristicsCalculationCardFuelInfoViewingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\Interfaces\FuelCharacteristicsCalculationCardOwningRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\Interfaces\FuelCharacteristicsCalculationCardRemovingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\StandardFuelCharacteristicsCalculationCardContextInfoEditingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\StandardFuelCharacteristicsCalculationCardContextInfoViewingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\StandardFuelCharacteristicsCalculationCardFuelInfoEditingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\StandardFuelCharacteristicsCalculationCardFuelInfoViewingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\StandardFuelCharacteristicsCalculationCardOwningRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Access\StandardFuelCharacteristicsCalculationCardRemovingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Common\AbstractEmployeeFuelCharacteristicsCalculationCardWorkingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Common\Interfaces\EmployeeFuelCharacteristicsCalculationCardWorkingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\EmployeeFuelCharacteristicsCalculationCardWorkingRules.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Registries\Interfaces\EmployeeFuelCharacteristicsCalculationCardWorkingRuleRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\Cards\Registries\StandardEmployeeFuelCharacteristicsCalculationCardWorkingRuleRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\Interfaces\ReservoirKindEditingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\Interfaces\ReservoirKindReferenceSuiteEditingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\Interfaces\ReservoirKindReferenceSuiteRemovingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\Interfaces\ReservoirKindReferenceSuiteViewingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\Interfaces\ReservoirKindRemovingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\Interfaces\ReservoirKindViewingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\StandardReservoirKindEditingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\StandardReservoirKindReferenceSuiteEditingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\StandardReservoirKindReferenceSuiteRemovingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\StandardReservoirKindReferenceSuiteViewingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\StandardReservoirKindRemovingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Access\StandardReservoirKindViewingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Common\AbstractEmployeeReservoirKindReferenceSuiteWorkingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Common\AbstractEmployeeReservoirKindWorkingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Common\Interfaces\EmployeeReservoirKindReferenceSuiteWorkingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Common\Interfaces\EmployeeReservoirKindWorkingRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\EmployeeReservoirKindReferenceSuiteWorkingRules.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\EmployeeReservoirKindWorkingRules.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Registries\Interfaces\EmployeeReservoirKindReferenceSuiteWorkingRuleRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Registries\Interfaces\EmployeeReservoirKindWorkingRuleRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Registries\StandardEmployeeReservoirKindReferenceSuiteWorkingRuleRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Rules\References\Reservoir Kinds\Registries\StandardEmployeeReservoirKindWorkingRuleRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\Cards\Access\Interfaces\FuelCharacteristicsCalculationCardAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\Cards\Access\StandardFuelCharacteristicsCalculationCardAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\Cards\Alteration\Interfaces\FuelCharacteristicsCalculationCardContextInfoAssigningService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\Cards\Alteration\Interfaces\FuelCharacteristicsCalculationCardCreatingService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\Cards\Alteration\StandardFuelCharacteristicsCalculationCardContextInfoAssigningService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\Cards\Alteration\StandardFuelCharacteristicsCalculationCardCreatingService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\Cards\Interfaces\FuelCharacteristicsCalculationCardAccountingService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\Cards\Interfaces\FuelCharacteristicsCalculationCardAccountingServiceRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\Cards\StandardFuelCharacteristicsCalculationCardAccountingService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\Cards\StandardFuelCharacteristicsCalculationCardAccountingServiceRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\Access\Interfaces\ReservoirKindAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\Access\Interfaces\ReservoirKindReferenceSuiteAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\Access\StandardReservoirKindAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\Access\StandardReservoirKindReferenceSuiteAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\Interfaces\ReservoirKindAccountingService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\Interfaces\ReservoirKindAccountingServiceRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\Interfaces\ReservoirKindReferenceSuiteAccountingService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\Interfaces\ReservoirSubLayerKindAccountingService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\StandardReservoirKindAccountingService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\StandardReservoirKindAccountingServiceRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\StandardReservoirKindReferenceSuiteAccountingService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Services\References\Reservoir Kinds\StandardReservoirSubLayerKindAccountingService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Supporting Objects\FuelCharacteristicsCalculationCardAccessRights.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Supporting Objects\ReservoirKindAccessRights.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Supporting Objects\ReservoirKindReferenceSuiteAccessRights.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Accounting\Supporting Objects\ReservoirSubLayerKind.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Rules\Access\Interfaces\FuelCharacteristicsCalculationAccessRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Rules\Access\StandardFuelCharacteristicsCalculationAccessRule.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Rules\Registries\Interfaces\FuelCharacteristicsCalculationRuleRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Rules\Registries\StandardFuelCharacteristicsCalculationRuleRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\Equipment\Interfaces\ElectronicMetroshtok.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\Equipment\Mocks\MockRandomCalculationElectronicMetroshtok.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\Equipment\Mocks\unMockRandomCalculationElectronicMetroshtokTestForm.pas">
+      <Form>Form1</Form>
+    </DCCReference>
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\Interfaces\FuelCharacteristicsCalculationService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\Interfaces\FuelCharacteristicsCalculationServiceRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\References\Reservoir Kinds\Interfaces\ReservoirCalibrationChart.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\References\Reservoir Kinds\Interfaces\ReservoirCalibrationChartRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\References\Reservoir Kinds\Mocks\MockRandomReservoirCalibrationChart.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\References\Reservoir Kinds\Mocks\MockReservoirCalibrationChartRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\References\Reservoir Kinds\NGEReservoirCalibrationChart.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\References\Reservoir Kinds\unTestReservoirCalibrationChartsForm.pas">
+      <Form>TestReservoirCalibrationChartsForm</Form>
+    </DCCReference>
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\StandardFuelCharacteristicsCalculationService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Services\StandardFuelCharacteristicsCalculationServiceRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Supporting Objects\ElectronicMetroshtokCalculationResult.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Supporting Objects\FuelCharacteristicsCalculation.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Calculation\Supporting Objects\ReservoirSubLayerCharacteristicsCalculationInput.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\Cards\AbstractFuelCharacteristicsCalculationCardDirectory.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\Cards\Access\Interfaces\FuelCharacteristicsCalculationCardDirectoryAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\Cards\Access\StandardFuelCharacteristicsCalculationCardDirectoryAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\Cards\Interfaces\FuelCharacteristicsCalculationCardDirectory.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\Cards\Interfaces\FuelCharacteristicsCalculationCardStorageServiceRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\Cards\StandardFuelCharacteristicsCalculationCardStorageServiceRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\References\Reservoir Kinds\AbstractReservoirKindDirectory.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\References\Reservoir Kinds\AbstractReservoirKindReferenceSuiteDirectory.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\References\Reservoir Kinds\Access\Interfaces\ReservoirKindDirectoryAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\References\Reservoir Kinds\Access\Interfaces\ReservoirKindReferenceSuiteDirectoryAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\References\Reservoir Kinds\Access\StandardReservoirKindDirectoryAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\References\Reservoir Kinds\Access\StandardReservoirKindReferenceSuiteDirectoryAccessService.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\References\Reservoir Kinds\Interfaces\ReservoirKindDirectory.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\References\Reservoir Kinds\Interfaces\ReservoirKindReferenceSuiteDirectory.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\References\Reservoir Kinds\Interfaces\ReservoirKindStorageServiceRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Services\References\Reservoir Kinds\StandardReservoirKindStorageServiceRegistry.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Supporting Objects\DirectoryAccessRights.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Supporting Objects\FuelCharacteristicsCalculationCardDirectoryAccessRights.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Supporting Objects\ReservoirKindDirectoryAccessRights.pas" />
+    <DCCReference Include="Fuel Characteristics Accounting\Storage\Supporting Objects\ReservoirKindReferenceSuiteDirectoryAccessRights.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Entities\Employee.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Entities\Interfaces\unIWorkingTimeConditions.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Entities\Role.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Entities\WorkingTimeConditions.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Rules\Working Time Conditions\Access\Interfaces\WorkingTimeConditionsAccessingRule.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Rules\Working Time Conditions\Access\StandardWorkingTimeConditionsAccessingRule.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Rules\Working Time Conditions\Registries\Interfaces\WorkingTimeConditionsRuleRegistry.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Rules\Working Time Conditions\Registries\StandardWorkingTimeConditionsRuleRegistry.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Rules\Working Time Conditions\WorkingTimeConditionsRules.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Qualification\Interfaces\EmployeeQualificationServiceRegistry.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Qualification\Interfaces\SpecialityAccountingService.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Qualification\StandardEmployeeQualificationServiceRegistry.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Qualification\StandardSpecialityAccountingService.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Working Time Conditions\Access\Interfaces\WorkingTimeConditionsAccessRights.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Working Time Conditions\Access\Interfaces\WorkingTimeConditionsAccessRightsService.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Working Time Conditions\Access\StandardWorkingTimeConditionsAccessRightsService.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Working Time Conditions\Interfaces\WorkingTimeConditionsAccountingService.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Working Time Conditions\Interfaces\WorkingTimeConditionsAccountingServiceRegistry.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Working Time Conditions\StandardWorkingTimeConditionsAccountingService.pas" />
+    <DCCReference Include="Personnel Management\Accounting\Services\Working Time Conditions\StandardWorkingTimeConditionsAccountingServiceRegistry.pas" />
+    <DCCReference Include="Personnel Management\Storage\Services\Working Time Conditions\AbstractWorkingTimeConditionsDirectory.pas" />
+    <DCCReference Include="Personnel Management\Storage\Services\Working Time Conditions\Interfaces\WorkingTimeConditionsDirectory.pas" />
+    <DCCReference Include="Personnel Management\Storage\Services\Working Time Conditions\Interfaces\WorkingTimeConditionsStorageServiceRegistry.pas" />
+    <DCCReference Include="Personnel Management\Storage\Services\Working Time Conditions\StandardWorkingTimeConditionsStorageServiceRegistry.pas" />
+  </ItemGroup>
+</Project>

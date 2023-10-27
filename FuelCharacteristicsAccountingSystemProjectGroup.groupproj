@@ -1,0 +1,85 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{2e9178de-8d45-4182-bf10-515d681f16b9}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="FuelCharacteristicsAccounting">
+    <MSBuild Projects="Presentation\FuelCharacteristicsAccounting.dproj" Targets="" />
+  </Target>
+  <Target Name="FuelCharacteristicsAccounting:Clean">
+    <MSBuild Projects="Presentation\FuelCharacteristicsAccounting.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="FuelCharacteristicsAccounting:Make">
+    <MSBuild Projects="Presentation\FuelCharacteristicsAccounting.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Domain">
+    <MSBuild Projects="Domain\Domain.dproj" Targets="" />
+  </Target>
+  <Target Name="Domain:Clean">
+    <MSBuild Projects="Domain\Domain.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Domain:Make">
+    <MSBuild Projects="Domain\Domain.dproj" Targets="Make" />
+  </Target>
+  <Target Name="ApplicationProject">
+    <MSBuild Projects="Application\ApplicationProject.dproj" Targets="" />
+  </Target>
+  <Target Name="ApplicationProject:Clean">
+    <MSBuild Projects="Application\ApplicationProject.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ApplicationProject:Make">
+    <MSBuild Projects="Application\ApplicationProject.dproj" Targets="Make" />
+  </Target>
+  <Target Name="SystemAuthentificationFormProject">
+    <MSBuild Projects="C:\Common Delphi Libs\u_59968 Delphi Modules\Authentification Form\SystemAuthentificationFormProject.dproj" Targets="" />
+  </Target>
+  <Target Name="SystemAuthentificationFormProject:Clean">
+    <MSBuild Projects="C:\Common Delphi Libs\u_59968 Delphi Modules\Authentification Form\SystemAuthentificationFormProject.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="SystemAuthentificationFormProject:Make">
+    <MSBuild Projects="C:\Common Delphi Libs\u_59968 Delphi Modules\Authentification Form\SystemAuthentificationFormProject.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Persistance">
+    <MSBuild Projects="Persistance\Persistance.dproj" Targets="" />
+  </Target>
+  <Target Name="Persistance:Clean">
+    <MSBuild Projects="Persistance\Persistance.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Persistance:Make">
+    <MSBuild Projects="Persistance\Persistance.dproj" Targets="Make" />
+  </Target>
+  <Target Name="ValidateComboBoxPackage">
+    <MSBuild Projects="C:\Common Delphi Libs\u_59968 Delphi Modules\ValidateComboBox\ValidateComboBoxPackage.dproj" Targets="" />
+  </Target>
+  <Target Name="ValidateComboBoxPackage:Clean">
+    <MSBuild Projects="C:\Common Delphi Libs\u_59968 Delphi Modules\ValidateComboBox\ValidateComboBoxPackage.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ValidateComboBoxPackage:Make">
+    <MSBuild Projects="C:\Common Delphi Libs\u_59968 Delphi Modules\ValidateComboBox\ValidateComboBoxPackage.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Externals">
+    <MSBuild Projects="Externals\Externals.dproj" Targets="" />
+  </Target>
+  <Target Name="Externals:Clean">
+    <MSBuild Projects="Externals\Externals.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Externals:Make">
+    <MSBuild Projects="Externals\Externals.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="FuelCharacteristicsAccounting;Domain;ApplicationProject;SystemAuthentificationFormProject;Persistance;ValidateComboBoxPackage;Externals" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="FuelCharacteristicsAccounting:Clean;Domain:Clean;ApplicationProject:Clean;SystemAuthentificationFormProject:Clean;Persistance:Clean;ValidateComboBoxPackage:Clean;Externals:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="FuelCharacteristicsAccounting:Make;Domain:Make;ApplicationProject:Make;SystemAuthentificationFormProject:Make;Persistance:Make;ValidateComboBoxPackage:Make;Externals:Make" />
+  </Target>
+</Project>
